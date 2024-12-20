@@ -5,6 +5,17 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WEB STUDIO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet-Roboto" />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet-Raleway" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
@@ -12,11 +23,11 @@
   <header>
     <!--Top-Left links-->
     <nav>
-      <a href="index.html"><span>WEB</span>STUDIO</a>
-      <ul>
-        <li><a href="">Studio</a></li>
-        <li><a href="">Portfolio</a></li>
-        <li><a href="">Contacts</a></li>
+      <a class="raleway-text web" href="index.html"><span>WEB</span>STUDIO</a>
+      <ul class="nav-ul">
+        <li class="list-items"><a href="">Studio</a></li>
+        <li class="list-items"><a href="">Portfolio</a></li>
+        <li class="list-items"><a class="contacts" href="">Contacts</a></li>
       </ul>
     </nav>
     <!--Top-Right links-->
@@ -32,52 +43,52 @@
   <!--Main begin-->
   <main>
     <!--Section Top-->
-    <section>
+    <section class="section-top">
       <h1>Effective Solutions for Your Business</h1>
       <button type="button">Order Service</button>
     </section>
 
-    <!--Section Mid-->
+    <!-- Section Mid-First -->
     <section>
-      <ul>
-        <li>
+      <ul class="column margin-left">
+        <li class="column-list">
           <h2>Strategy</h2>
         </li>
-        <li>
-          <p>
+        <li class="column-list">
+          <p class="parag">
             Our goal is to identify the business problem to walk away with the
             perfect and creative solution.
           </p>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="column">
+        <li class="column-list">
           <h2>Punctuality</h2>
         </li>
-        <li>
-          <p>
+        <li class="column-list">
+          <p class="parag">
             Bring the key message to the brand's audience for the best price
             within the shortest possible time.
           </p>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="column">
+        <li class="column-list">
           <h2>Diligence</h2>
         </li>
-        <li>
-          <p>
+        <li class="column-list">
+          <p class="parag">
             Research and confirm brands that present the strongest digital
             growth opportunities and minimize risk.
           </p>
         </li>
       </ul>
-      <ul>
-        <li>
+      <ul class="column">
+        <li class="column-list">
           <h2>Technologies</h2>
         </li>
-        <li>
-          <p>
+        <li class="column-list">
+          <p class="parag">
             Design practice focused on digital experiences. We bring forth a
             deep passion for problem-solving.
           </p>
@@ -85,42 +96,77 @@
       </ul>
     </section>
 
-    <!--Section Bottom-->
-    <section>
-      <h2>Our Team</h2>
+    <!--Section Mid Second-->
+    <section class="section-team">
+      <h2 class="title-team">Our Team</h2>
+      <ul class="team-ul">
+        <li><img class="img" src="./images/img-3.jpg" alt="Mark Photo" /></li>
+        <li class="bold">Mark Guerrero</li>
+        <li>Product Designer</li>
+      </ul>
+      <ul class="team-ul">
+        <li><img class="img" src="./images/img-2.jpg" alt="Tom Photo" /></li>
+        <li class="bold">Tom Ford</li>
+        <li>Frontend Developer</li>
+      </ul>
+      <ul class="team-ul">
+        <li>
+          <img class="img" src="./images/img-1.jpg" alt="Camila Photo" />
+        </li>
+        <li class="bold">Camila Garcia</li>
+        <li>Marketing</li>
+      </ul>
+      <ul class="team-ul">
+        <li><img class="img" src="./images/img.jpg" alt="Daniel Photo" /></li>
+        <li class="bold">Daniel Wilson</li>
+        <li>UI Designer</li>
+      </ul>
     </section>
-    <table>
-      <tr>
-        <th><img src="./images/img-3.jpg" alt="Mark Photo" width="264" /></th>
-        <th><img src="./images/img-2.jpg" alt="Tom Photo" width="264" /></th>
-        <th>
-          <img src="./images/img-1.jpg" alt="Camila Photo" width="264" />
-        </th>
-        <th><img src="./images/img.jpg" alt="Daniel Photo" width="264" /></th>
-      </tr>
-      <tr>
-        <td>Mark Guerrero</td>
-        <td>Tom Ford</td>
-        <td>Camila Garcia</td>
-        <td>Daniel Wilson</td>
-      </tr>
-      <tr>
-        <td>Product Designer</td>
-        <td>Frontend Developer</td>
-        <td>Marketing</td>
-        <td>UI Designer</td>
-      </tr>
-    </table>
+    <section>
+      <h2 class="title-team title-bottom">Our Portfolio</h2>
+      <ul class="port-ul">
+        <li><img src="./images/img-4.jpg" alt="Banking App" /></li>
+        <li class="bold">Banking App</li>
+        <li>App</li>
+      </ul>
+      <ul class="port-ul">
+        <li><img src="./images/img-5.jpg" alt="Cashless Payment" /></li>
+        <li class="bold">Cashless Payment</li>
+        <li>Marketing</li>
+      </ul>
+      <ul class="port-ul">
+        <li><img src="./images/img-6.jpg" alt="Meditation App" /></li>
+        <li class="bold">Meditation App</li>
+        <li>App</li>
+      </ul>
+      <ul class="port-ul">
+        <li><img src="./images/img-7.jpg" alt="Banking App" /></li>
+        <li class="bold">Taxi Service</li>
+        <li>Marketing</li>
+      </ul>
+      <ul class="port-ul">
+        <li><img src="./images/img-8.jpg" alt="Cashless Payment" /></li>
+        <li class="bold">Screen Illustrations</li>
+        <li>Design</li>
+      </ul>
+      <ul class="port-ul">
+        <li><img src="./images/img-9.jpg" alt="Meditation App" /></li>
+        <li class="bold">Online Courses</li>
+        <li>Marketing</li>
+      </ul>
+    </section>
   </main>
   <!--Main end-->
 
   <!--Footer begin-->
   <footer>
-    <a href="index.html"><span>WEB</span>STUDIO</a>
-    <p>
-      Increase the flow of customers and sales for your business with digital
-      marketing & growth solutions.
-    </p>
+    <div class="footer-text">
+      <a class="raleway-text white-web" href="index.html"><span class="web">WEB</span>STUDIO</a>
+      <p>
+        Increase the flow of customers and sales for your business with
+        digital marketing & growth solutions.
+      </p>
+    </div>
   </footer>
   <!--Footer end-->
 </body>
